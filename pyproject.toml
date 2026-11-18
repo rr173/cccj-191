@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dawgdict"
+version = "0.1.0"
+description = "Minimal acyclic deterministic dictionary automaton with bounded top-k prefix and Levenshtein suggest queries"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+
+[project.scripts]
+dicttool = "dicttool.cli:main"
+
+[tool.setuptools]
+packages = ["dicttool"]
